@@ -32,6 +32,9 @@ const LoginScreen = () => {
       }
     }
   };
+  const onPressButton=() =>{
+    alert(err2)
+  }
 
   return (
     <View>
@@ -87,7 +90,7 @@ const LoginScreen = () => {
                 />
                 
             </TouchableOpacity> */}
-            <TouchableOpacity style={styles.buttontest} onPress={onSignIn}>
+            <TouchableOpacity style={styles.buttontest} onPress={onPressButton}>
                 <Text style={styles.buttonword}>登入</Text>
             </TouchableOpacity>
         </View>
@@ -124,6 +127,18 @@ const styles = StyleSheet.create({
         alignItems:'center',
         zIndex:3,
     },
+    // buttontest:{
+    //     backgroundColor:'#5E6B7B',
+    //     width:95,
+    //     height:43,
+    //     borderRadius:5,
+    //     position:'absolute',
+    //     top:250,
+    //     left:232,
+    //     flexDirection:'row',
+    //     alignItems:'center',
+    //     zIndex:3,
+    // },
     buttonword:{
          textAlign:'center',
          color:'white',

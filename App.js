@@ -28,13 +28,12 @@ const firebaseConfig = {
   appId: "1:603012724012:web:a2e8bcd358ca5ff215e889",
   measurementId: "G-NFSC117SM8"
 };
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-}
 
 
 export default function App() {
-  
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
 
   return (
     <Login></Login>
